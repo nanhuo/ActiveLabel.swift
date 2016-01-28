@@ -11,6 +11,7 @@ UILabel drop-in replacement supporting Hashtags (#), Mentions (@) and URLs (http
 * Well tested and documented
 
 ![](ActiveLabelDemo/demo.gif)
+![](ActiveLabelDemo/screenshot.png)
 
 ## Usage
 

@@ -12,6 +12,7 @@ enum ActiveElement {
     case Mention(String)
     case Hashtag(String)
     case URL(String)
+    case PhoneNumber(String)
     case None
 }
 
@@ -19,6 +20,7 @@ public enum ActiveType {
     case Mention
     case Hashtag
     case URL
+    case PhoneNumber
     case None
 }
 

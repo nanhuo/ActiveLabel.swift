@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DAE96D41C59BC4700E8DA41 /* ActiveLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0249A21B9989B1005D8035 /* ActiveLabel.framework */; };
+		2DAE96D51C59BC4700E8DA41 /* ActiveLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0249A21B9989B1005D8035 /* ActiveLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F0249A61B9989B1005D8035 /* ActiveLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0249A51B9989B1005D8035 /* ActiveLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F0249AD1B9989B1005D8035 /* ActiveLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0249A21B9989B1005D8035 /* ActiveLabel.framework */; settings = {ASSET_TAGS = (); }; };
+		8F0249AD1B9989B1005D8035 /* ActiveLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0249A21B9989B1005D8035 /* ActiveLabel.framework */; };
 		8F0249B21B9989B1005D8035 /* ActiveTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0249B11B9989B1005D8035 /* ActiveTypeTests.swift */; };
 		8F0249C31B998A66005D8035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0249C21B998A66005D8035 /* AppDelegate.swift */; };
 		8F0249C51B998A66005D8035 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0249C41B998A66005D8035 /* ViewController.swift */; };
 		8F0249C81B998A66005D8035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F0249C61B998A66005D8035 /* Main.storyboard */; };
 		8F0249CA1B998A66005D8035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0249C91B998A66005D8035 /* Assets.xcassets */; };
 		8F0249CD1B998A66005D8035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F0249CB1B998A66005D8035 /* LaunchScreen.storyboard */; };
-		8F0249D31B998C00005D8035 /* ActiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0249D21B998C00005D8035 /* ActiveLabel.swift */; settings = {ASSET_TAGS = (); }; };
-		8F0249D51B998D21005D8035 /* ActiveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0249D41B998D21005D8035 /* ActiveType.swift */; settings = {ASSET_TAGS = (); }; };
+		8F0249D31B998C00005D8035 /* ActiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0249D21B998C00005D8035 /* ActiveLabel.swift */; };
+		8F0249D51B998D21005D8035 /* ActiveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0249D41B998D21005D8035 /* ActiveType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2DAE96D61C59BC4700E8DA41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F0249991B9989B1005D8035 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F0249A11B9989B1005D8035;
+			remoteInfo = ActiveLabel;
+		};
 		8F0249AE1B9989B1005D8035 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8F0249991B9989B1005D8035 /* Project object */;
@@ -28,6 +37,20 @@
 			remoteInfo = ActiveLabel;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DAE96D81C59BC4700E8DA41 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DAE96D51C59BC4700E8DA41 /* ActiveLabel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8F0249A21B9989B1005D8035 /* ActiveLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActiveLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DAE96D41C59BC4700E8DA41 /* ActiveLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,10 +207,12 @@
 				8F0249BC1B998A66005D8035 /* Sources */,
 				8F0249BD1B998A66005D8035 /* Frameworks */,
 				8F0249BE1B998A66005D8035 /* Resources */,
+				2DAE96D81C59BC4700E8DA41 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2DAE96D71C59BC4700E8DA41 /* PBXTargetDependency */,
 			);
 			name = ActiveLabelDemo;
 			productName = ActiveLabelDemo;
@@ -291,6 +317,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2DAE96D71C59BC4700E8DA41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F0249A11B9989B1005D8035 /* ActiveLabel */;
+			targetProxy = 2DAE96D61C59BC4700E8DA41 /* PBXContainerItemProxy */;
+		};
 		8F0249AF1B9989B1005D8035 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8F0249A11B9989B1005D8035 /* ActiveLabel */;
@@ -468,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ActiveLabelDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -480,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ActiveLabelDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
